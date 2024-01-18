@@ -3,9 +3,9 @@ Contributors: H3llas, soulseekah
 Tags: embed, images, comments, convert, links
 Requires at least: 3.7.1
 Tested up to: 6.0.0
-Stable tag: 0.6
+Stable tag: 0.7
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Embed direct image links in your comments with an img tag.
 
@@ -16,6 +16,7 @@ Image formats supported:
 1. .jpg
 2. .gif
 3. .png
+4. .webp
 
 You can specify your comment width so the images are fitted nicely. Images are not hosted on your server neither this plugin pickups any data. 
 
@@ -36,6 +37,9 @@ No. It just wrap any URL in comments which points to image into IMG tag.
 Yes. But setting size only create a container for image. Image still can be any resolution.
 
 ## Changelog
+
+### 0.7
+* Added support for .webp images.
 
 ### 0.6 
 * <a href="https://profiles.wordpress.org/soulseekah">Gennady Kovshenin</a> found and fixed XSS vulnerability.

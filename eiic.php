@@ -2,10 +2,10 @@
 /*
 Plugin Name: Embed Images in Comments
 Plugin URI: http://www.ascic.net/embed-images-in-comments/
-Description: This plugin embeds all image URLs (.jpg, .gif, .png) with an IMG tag.
-Author: Zeljko Ascic, Gennady Kovshenin 
-Contributor: 
-Version: 0.6
+Description: This plugin embeds all image URLs (.jpg, .gif, .png, .webp) with an IMG tag.
+Author: Zeljko Ascic 
+Contributor: Gennady Kovshenin
+Version: 0.7
 Author URI: http://www.ascic.net/
 */   
    
@@ -66,7 +66,7 @@ add_action('comment_text', 'comments_img_embed', 2);
 function comments_img_embed($comment) {
    $size = get_option('option_eiic');
    return preg_replace_callback(
-      array( '#(http://([^\s]*)(\..*)\.(jpg|gif|png|JPG|GIF|PNG))#', '#(https://([^\s]*)\.(jpg|gif|png|JPG|GIF|PNG))#' ),
+      array( '#(http://([^\s]*)(\..*)\.(jpg|gif|png|webp|JPG|GIF|PNG|WEBP))#', '#(https://([^\s]*)\.(jpg|gif|png|webp|JPG|GIF|PNG|WEBP))#' ),
       function( $matches ) use ( $size ) {
           if ( ! empty( $matches ) ) {
               $url = esc_url( $matches[0] );
