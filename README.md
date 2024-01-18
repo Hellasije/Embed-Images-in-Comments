@@ -9,7 +9,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Embed direct image links in your comments with an img tag.
 
-# Description
+## Description
 This plugins embeds image links in comments with the img tag so the image are visible in your comment timeline. 
 
 Image formats supported:
@@ -24,35 +24,33 @@ Do note that people can link extremely large images and your page loading can be
 Demo:
 [Embed Comment Images](http://www.ascic.net/embed-comment-images/ "Embed Images in Comments")
 
-# Installation
+## Installation
 1. Upload "eiic.php" to the "/wp-content/plugins/" directory.
 2. Activate the plugin through the "Plugins" menu in WordPress backend.
 
-
-# Frequently Asked Questions
-## Does this plugin import images to my server?
+## Frequently Asked Questions
+### Does this plugin import images to my server?
 No. It just wrap any URL in comments which points to image into IMG tag.
 
-## Can I set size of images?
+### Can I set size of images?
 Yes. But setting size only create a container for image. Image still can be any resolution.
 
+## Changelog
 
-# Changelog
-
-## 0.6 
+### 0.6 
 * <a href="https://profiles.wordpress.org/soulseekah">Gennady Kovshenin</a> found and fixed XSS vulnerability.
 
-## 0.5 
+### 0.5 
 * Wrapped inserted image with a link tag which points to original image, so the click on image opens large original version of the image.
 
-## 0.4 
+### 0.4 
 * Bug fix. When link of the image has extension in capitalized letters e.g. .JPG image is not wrapped with the img tag.
 
-## 0.3
+### 0.3
 * Added support for images residing on https urls.
 
-## 0.2 
+### 0.2 
 * Added image resize support.
 
-## 0.1 
+### 0.1 
 * Initial release.
